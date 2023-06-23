@@ -1,19 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;500&display=swap");
-
 :root {
   --brand-red: #fc4747;
   --brand-black: #10141e;
   --brand-light-blue: #5a698f;
   --brand-dark-blue: #161d2f;
-  --brand-white: #ffffff;
+  --pure-white: #ffffff;
+
+  --fz-size-32: 32px;
+  --fz-size-24: 24px;
+  --fz-size-18: 18px;
+  --fz-size-15: 15px;
+  --fz-size-13: 13px;
 }
 
 body {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
-  background-color: var(--brand-dark-blue);
-  color: var(--brand-white);
-
+  background-color: var(--brand-black);
+  color: var(--pure-white);
 }
 
 * {
