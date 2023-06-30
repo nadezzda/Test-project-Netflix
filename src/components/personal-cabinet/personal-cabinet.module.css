@@ -1,0 +1,85 @@
+
+.main {
+    margin: 20px 6%;
+}
+.logo {
+    position: relative;
+    margin: 25px 0 0 50%;
+}
+
+.personData {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    padding: 20px 15%;
+    margin: 20px auto;
+    background: var(--brand-dark-blue);
+    border-radius: 20px;
+}
+
+.userPhoto {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.userName {
+    width: min-content;
+}
+
+.userDesc {
+    margin: 20px 0 20px auto;
+}
+
+.label {
+    float: left;
+    margin-right: 10px;
+}
+
+.number {
+    float: right;
+}
+
+.buttonGroup {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3px;
+    margin-bottom: 20px;
+}
+
+.button {
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: var(--pure-white);
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: var(--fz-size-15);
+    line-height: 19px;
+    text-align: center;
+    color: var(--brand-black);
+    transition: background-color  0.8s ease-in-out, color 0.8s ease-in-out;
+}
+
+.activeButton {
+    background-color: var(--brand-red);
+    color: var(--pure-white);
+}
+
+@media (max-width: 890px) {
+    .personData {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .userDesc {
+        margin: 25px auto;
+    }
+}
