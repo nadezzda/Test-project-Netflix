@@ -33,6 +33,7 @@
     line-height: normal;
     width: 100%;
     padding: 0;
+    color: var(--pure-white);
 }
 .content {
     margin: 25px 0;
@@ -74,7 +75,7 @@
 .bookmark img {
     margin: 9px;
 }
-@media (max-width: 576px) {
+@media (max-width: 380px) {
     .input {
         font-size: 16px;
     }
@@ -82,14 +83,15 @@
         font-size: 20px;
     }
     .card {
-        width: 164px;
+        width: 140px;
     }
     .bookmark {
-        left: 140px; 
-        top: -170px;
+        left: 120px; 
+        top: -110px;
     }
     .banner {
-        width: 180px;
+        width: 164px;
+        height: 110px ;
     }
 }
   
