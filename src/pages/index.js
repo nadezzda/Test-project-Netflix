@@ -12,7 +12,7 @@ export async function getStaticProps() {
   if (!user) {
     return {
       redirect: {
-        destination: "/login",
+        destination: "/bookmarked",
       },
       props: {},
     };
