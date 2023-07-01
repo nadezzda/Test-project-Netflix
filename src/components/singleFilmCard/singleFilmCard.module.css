@@ -1,0 +1,95 @@
+.section {
+    width: 95%;
+    margin: 40px auto;
+}
+.section h1 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.5px;
+    margin: 15px;
+}
+.form {
+    display: flex;
+    width: 381px;
+    height: 32px;
+    padding-right: 0px;
+    align-items: flex-start;
+    gap: 24px;
+    flex-shrink: 0;
+}
+.button {
+    background: var(--brand-black);
+    border: none;
+}
+.input {
+    background: var(--brand-black);
+    border: none;
+    height: 32px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    width: 100%;
+    padding: 0;
+}
+.content {
+    margin: 25px 0;
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+.card {
+    width: 280px;
+    display: block;
+    margin: 15px;
+}
+.card p {
+    display: flex;
+    height: 16px;
+    justify-content:start;
+    align-items:center;
+    font-size: 13px;
+    gap: 8px;
+}
+.card h4 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.bookmark {
+    border-radius: 20px;
+    background: var(--brand-dark-blue);
+    width: 32px;
+    height: 32px;
+    position: relative;
+    top: -160px;
+    left: 230px;
+}
+.banner {
+    width: 280px;
+}
+.bookmark img {
+    margin: 9px;
+}
+@media (max-width: 576px) {
+    .input {
+        font-size: 16px;
+    }
+    .section h1 {
+        font-size: 20px;
+    }
+    .card {
+        width: 164px;
+    }
+    .bookmark {
+        left: 140px; 
+        top: -170px;
+    }
+    .banner {
+        width: 180px;
+    }
+}
+  
