@@ -11,4 +11,16 @@ const Cabinet = () => {
 
 export default Cabinet;
 
-
+export async function getStaticProps() {
+    const user = false;
+    if (user) {
+      return {
+        redirect: { destination: "/cabinet" },
+        props: {},
+      };
+    }
+    return {
+      props: {},
+    };
+  }
+  

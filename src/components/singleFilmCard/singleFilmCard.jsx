@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./singleFilmCard.module.css";
 
 
-const SingleFilmCard = ({name, year, type, rating, img}) => {
+const SingleFilmCard = ({name, year, type, rating, img, bookmarked}) => {
     return (
         <div className={styles.card}>
             <Image
@@ -14,12 +14,21 @@ const SingleFilmCard = ({name, year, type, rating, img}) => {
                 className={styles.banner}
             />
             <div className={styles.bookmark}>
-                <Image 
+                {bookmarked ? (
+                    <Image 
                     src="/icons/icon-bookmark-full.svg"
                     alt="bookmark"
                     width={15}
                     height={15}
                 />
+                ) : (
+                    <Image 
+                    src="/icons/icon-bookmark-empty.svg"
+                    alt="bookmark"
+                    width={15}
+                    height={15}
+                />
+                )}
             </div>
             <p>{year} • 
             {type === "Movie" ? (
