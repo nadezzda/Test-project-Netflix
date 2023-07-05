@@ -35,20 +35,20 @@ const BookmarkedPage = () => {
             <div>
               <h1>Bookmarked Movies</h1>
               <div className={styles.content}>
-                <SingleFilmCard name={movie.name} year={movie.year} type={movie.type} rating={movie.rating} img={movie.img}/>
-                <SingleFilmCard name={movie.name} year={movie.year} type={movie.type} rating={movie.rating} img={movie.img}/>
-                <SingleFilmCard name={movie.name} year={movie.year} type={movie.type} rating={movie.rating} img={movie.img}/>
-                <SingleFilmCard name={movie.name} year={movie.year} type={movie.type} rating={movie.rating} img={movie.img}/>
-                <SingleFilmCard name={movie.name} year={movie.year} type={movie.type} rating={movie.rating} img={movie.img}/>
+                <SingleFilmCard name={movie.name} year={movie.year} type={movie.type} rating={movie.rating} img={movie.img} bookmarked={true}/>
+                <SingleFilmCard name={movie.name} year={movie.year} type={movie.type} rating={movie.rating} img={movie.img} bookmarked={true}/>
+                <SingleFilmCard name={movie.name} year={movie.year} type={movie.type} rating={movie.rating} img={movie.img} bookmarked={true}/>
+                <SingleFilmCard name={movie.name} year={movie.year} type={movie.type} rating={movie.rating} img={movie.img} bookmarked={true}/>
+                <SingleFilmCard name={movie.name} year={movie.year} type={movie.type} rating={movie.rating} img={movie.img} bookmarked={true}/>
               </div>
             </div>
             <div>
               <h1>Bookmarked TV-Series</h1>
               <div className={styles.content}>
-                <SingleFilmCard name={tvShow.name} year={tvShow.year} type={tvShow.type} rating={tvShow.rating} img={tvShow.img}/>
-                <SingleFilmCard name={tvShow.name} year={tvShow.year} type={tvShow.type} rating={tvShow.rating} img={tvShow.img}/>
-                <SingleFilmCard name={tvShow.name} year={tvShow.year} type={tvShow.type} rating={tvShow.rating} img={tvShow.img}/>
-                <SingleFilmCard name={tvShow.name} year={tvShow.year} type={tvShow.type} rating={tvShow.rating} img={tvShow.img}/>
+                <SingleFilmCard name={tvShow.name} year={tvShow.year} type={tvShow.type} rating={tvShow.rating} img={tvShow.img} bookmarked={true}/>
+                <SingleFilmCard name={tvShow.name} year={tvShow.year} type={tvShow.type} rating={tvShow.rating} img={tvShow.img} bookmarked={true}/>
+                <SingleFilmCard name={tvShow.name} year={tvShow.year} type={tvShow.type} rating={tvShow.rating} img={tvShow.img} bookmarked={true}/>
+                <SingleFilmCard name={tvShow.name} year={tvShow.year} type={tvShow.type} rating={tvShow.rating} img={tvShow.img} bookmarked={true}/>
               </div>
             </div>
         </section>
